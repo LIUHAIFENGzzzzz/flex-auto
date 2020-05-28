@@ -1,12 +1,20 @@
 <template>
   <div
-    :class="['v-flex', type ? 'v-flex__' + type : '']"
+    :data-name="$options.name"
+    :class="[
+      'v-flex',
+      type ? 'v-flex__' + type : '',
+      fixed ? 'v-flex__fixed' : '',
+    ]"
     :style="{
+      width: width,
       height: height,
+      flex: span,
       'flex-direction': direction,
       'flex-wrap': wrap,
       'justify-content': justify,
       'align-items': align,
+      padding: padding,
     }"
   >
     <slot>&nbsp;</slot>
@@ -20,6 +28,7 @@ export default {
   name: "v-flex",
   mixins: [mixin],
   props: {
+    width: String,
     height: String,
   },
   data() {
@@ -30,8 +39,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.v-flex {
-  height: 100%;
-}
-</style>
+<style lang="scss" scoped></style>

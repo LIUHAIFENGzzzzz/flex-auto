@@ -1,34 +1,40 @@
 <template>
   <v-flex direction="column">
-    <v-grid direction="column">
+    <v-flex direction="column">
       <div class="title">row</div>
       <v-row>
-        <v-grid>
-          <div class="grid-content red">1</div>
-        </v-grid>
-        <v-grid>
+        <v-flex>
+          <v-flex>
+            <v-col direction="column">
+              <v-center>1</v-center>
+              <v-center>2</v-center>
+            </v-col>
+          </v-flex>
+          <v-flex>2</v-flex>
+        </v-flex>
+        <v-flex>
           <div class="grid-content black">2</div>
-        </v-grid>
-        <v-grid>
+        </v-flex>
+        <v-flex>
           <div class="grid-content yellow">3</div>
-        </v-grid>
+        </v-flex>
       </v-row>
-    </v-grid>
-    <v-grid direction="column">
+    </v-flex>
+    <v-flex direction="column">
       <div class="title">col</div>
-      <v-col>
-        <v-row :span="3">
-          <v-grid>1</v-grid>
-          <v-grid>2</v-grid>
+      <v-col :gutter="['1rem']">
+        <v-row>
+          <v-flex>1</v-flex>
+          <v-flex>2</v-flex>
         </v-row>
-        <v-grid>
+        <v-flex>
           <div class="grid-content black">3</div>
-        </v-grid>
-        <v-grid>
+        </v-flex>
+        <v-flex>
           <div class="grid-content yellow">4</div>
-        </v-grid>
+        </v-flex>
       </v-col>
-    </v-grid>
+    </v-flex>
   </v-flex>
 </template>
 

@@ -1,18 +1,23 @@
 import vFlex from "./v-flex";
-import vGrid from "./v-grid";
 
 import vRow from "./v-row";
 import vCol from "./v-col";
+
+import vCenter from "./v-center";
+
+import vGrid from "./v-grid";
 
 import "./scss/style.scss";
 
 export default {
   install: (Vue) => {
     Vue.component("v-flex", vFlex);
-    Vue.component("v-grid", vGrid);
 
     Vue.component("v-row", vRow);
     Vue.component("v-col", vCol);
+    Vue.component("v-center", vCenter);
+
+    Vue.component("v-grid", vGrid);
   },
 };
 

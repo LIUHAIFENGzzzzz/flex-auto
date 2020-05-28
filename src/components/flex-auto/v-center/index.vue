@@ -18,15 +18,19 @@
 import mixin from "../mixins";
 
 export default {
-  name: "v-col",
+  name: "v-center",
   mixins: [mixin],
   components: {
     vFlex: (resolve) => require(["../v-flex"], resolve),
   },
   props: {
-    direction: {
+    justify: {
       type: String,
-      default: "row",
+      default: "center",
+    },
+    align: {
+      type: String,
+      default: "center",
     },
   },
   data() {

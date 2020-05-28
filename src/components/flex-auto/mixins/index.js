@@ -13,7 +13,7 @@ export default {
     direction: {
       // flex-direction: row | row-reverse | column | column-reverse;
       type: String,
-      default: "column",
+      default: "",
     },
     wrap: {
       // flex-wrap: nowrap | wrap | wrap-reverse;
@@ -32,5 +32,17 @@ export default {
     },
     // 栅格间隔
     gutter: [String, Array],
+    // 固定容器宽高
+    fixed: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  computed: {
+    padding() {
+      return Array.isArray(this.$parent.gutter)
+        ? this.$parent.gutter.join(" ")
+        : this.$parent.gutter;
+    },
   },
 };

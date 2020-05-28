@@ -1,15 +1,16 @@
 <template>
   <v-flex
-    class="v-flex__row"
-    :style="{ flex: span }"
+    :data-name="$options.name"
+    :style="{ flex: span, padding: padding }"
     :type="type"
     :direction="direction"
     :wrap="wrap"
     :justify="justify"
     :align="align"
     :gutter="gutter"
+    :fixed="fixed"
   >
-    <slot></slot>
+    <slot>&nbsp;</slot>
   </v-flex>
 </template>
 
@@ -36,9 +37,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.v-flex {
-  flex: 1;
-  height: auto;
-}
-</style>
+<style lang="scss" scoped></style>
