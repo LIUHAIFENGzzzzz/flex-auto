@@ -46,6 +46,11 @@ Vue.use(flexAuto);
   <v-flex>2</v-flex>
 </v-col>
 
+<!-- 居中布局 -->
+<v-center>
+  justify-content:center && align-items:center
+</v-center>
+
 <!-- 4 * 4 -->
 <v-row>
   <v-col>
