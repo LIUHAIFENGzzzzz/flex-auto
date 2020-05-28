@@ -1,0 +1,15 @@
+.v-flex__flex, .v-grid__flex {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+}
+
+.v-flex__inline-flex, .v-grid__inline-flex {
+  display: -webkit-inline-flex;
+  /* Safari */
+  display: inline-flex;
+}
+
+.v-flex__block, .v-grid__block {
+  display: block;
+}

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="v-row"
+    :class="['v-flex', type ? 'v-flex__' + type : '']"
     :style="{
       height: height,
       'flex-direction': direction,
@@ -9,36 +9,18 @@
       'align-items': align,
     }"
   >
-    <slot></slot>
+    <slot>&nbsp;</slot>
   </div>
 </template>
 
 <script>
+import mixin from "../mixins";
+
 export default {
-  name: "v-title",
+  name: "v-flex",
+  mixins: [mixin],
   props: {
-    height: [Number, String],
-    direction: {
-      // flex-direction: row | row-reverse | column | column-reverse;
-      type: String,
-      default: "",
-    },
-    wrap: {
-      // flex-wrap: nowrap | wrap | wrap-reverse;
-      type: String,
-      default: "",
-    },
-    justify: {
-      // justify-content: flex-start | flex-end | center | space-between | space-around;
-      type: String,
-      default: "",
-    },
-    align: {
-      // align-items: flex-start | flex-end | center | baseline | stretch;
-      type: String,
-      default: "",
-    },
-    gutter: [String, Array],
+    height: String,
   },
   data() {
     return {};
@@ -49,17 +31,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.v-row {
-  display: -webkit-flex; /* Safari */
-  display: flex;
-
+.v-flex {
   height: 100%;
-
-  .v-col:first-child {
-    padding-left: 0 !important;
-  }
-  .v-col:last-child {
-    padding-right: 0 !important;
-  }
 }
 </style>

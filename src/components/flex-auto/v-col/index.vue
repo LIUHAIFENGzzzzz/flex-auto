@@ -1,29 +1,31 @@
 <template>
-  <div
-    :class="['v-col', overflow ? '' : 'v-col__overflow-off']"
-    :style="{
-      flex: span + ' 1 auto',
-      padding: Array.isArray(this.$parent.gutter)
-        ? this.$parent.gutter.join(' ')
-        : this.$parent.gutter,
-    }"
+  <v-flex
+    class="v-flex__row"
+    :style="{ flex: span }"
+    :type="type"
+    :direction="direction"
+    :wrap="wrap"
+    :justify="justify"
+    :align="align"
+    :gutter="gutter"
   >
     <slot></slot>
-  </div>
+  </v-flex>
 </template>
 
 <script>
+import mixin from "../mixins";
+
 export default {
-  name: "v-title",
+  name: "v-row",
+  mixins: [mixin],
+  components: {
+    vFlex: (resolve) => require(["../v-flex"], resolve),
+  },
   props: {
-    span: {
-      type: Number,
-      default: 1,
-    },
-    overflow: {
-      // flex布局，子元素会撑开父元素，false不撑开
-      type: Boolean,
-      default: true,
+    direction: {
+      type: String,
+      default: "row",
     },
   },
   data() {
@@ -35,9 +37,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.v-col {
-  &.v-col__overflow-off {
-    width: 0;
-  }
+.v-flex {
+  flex: 1;
+  height: auto;
 }
 </style>

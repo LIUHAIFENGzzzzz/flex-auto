@@ -1,44 +1,32 @@
 <template>
-  <div
-    class="v-row"
-    :style="{
-      height: height,
-      'flex-direction': direction,
-      'flex-wrap': wrap,
-      'justify-content': justify,
-      'align-items': align,
-    }"
+  <v-flex
+    class="v-flex__row"
+    :style="{ flex: span }"
+    :type="type"
+    :direction="direction"
+    :wrap="wrap"
+    :justify="justify"
+    :align="align"
+    :gutter="gutter"
   >
     <slot></slot>
-  </div>
+  </v-flex>
 </template>
 
 <script>
+import mixin from "../mixins";
+
 export default {
-  name: "v-title",
+  name: "v-row",
+  mixins: [mixin],
+  components: {
+    vFlex: (resolve) => require(["../v-flex"], resolve),
+  },
   props: {
-    height: [Number, String],
     direction: {
-      // flex-direction: row | row-reverse | column | column-reverse;
       type: String,
-      default: "",
+      default: "column",
     },
-    wrap: {
-      // flex-wrap: nowrap | wrap | wrap-reverse;
-      type: String,
-      default: "",
-    },
-    justify: {
-      // justify-content: flex-start | flex-end | center | space-between | space-around;
-      type: String,
-      default: "",
-    },
-    align: {
-      // align-items: flex-start | flex-end | center | baseline | stretch;
-      type: String,
-      default: "",
-    },
-    gutter: [String, Array],
   },
   data() {
     return {};
@@ -49,17 +37,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.v-row {
-  display: -webkit-flex; /* Safari */
-  display: flex;
-
-  height: 100%;
-
-  .v-col:first-child {
-    padding-left: 0 !important;
-  }
-  .v-col:last-child {
-    padding-right: 0 !important;
-  }
+.v-flex {
+  flex: 1;
+  height: auto;
 }
 </style>
