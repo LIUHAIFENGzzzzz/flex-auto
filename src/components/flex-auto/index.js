@@ -2,7 +2,6 @@ import vFlex from "./v-flex";
 
 import vRow from "./v-row";
 import vCol from "./v-col";
-
 import vCenter from "./v-center";
 
 import vGrid from "./v-grid";
@@ -21,4 +20,4 @@ export default {
   },
 };
 
-export { vFlex, vGrid, vRow, vCol };
+export { vFlex, vRow, vCol, vCenter, vGrid };

@@ -7,8 +7,6 @@
       fixed ? 'v-flex__fixed' : '',
     ]"
     :style="{
-      width: width,
-      height: height,
       flex: span,
       'flex-direction': direction,
       'flex-wrap': wrap,

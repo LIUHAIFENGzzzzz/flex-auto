@@ -1,12 +1,23 @@
 {
   "name": "flex-auto",
-  "version": "1.0.8",
+  "version": "2.0.0",
   "description": "flex布局",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["flex-auto","flex","auto","row","col"],
+  "keywords": [
+    "flex-auto",
+    "flex",
+    "vue",
+    "row",
+    "col",
+    "grid"
+  ],
   "author": "yaodao",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:LIUHAIFENGzzzzz/flex-auto.git"
+  }
 }

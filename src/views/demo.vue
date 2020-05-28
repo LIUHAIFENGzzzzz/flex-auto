@@ -34,7 +34,11 @@
           <div class="grid-content yellow">4</div>
         </v-flex>
       </v-col>
-    </v-flex>
+</v-flex>
+<v-flex>
+  <v-flex>1份</v-flex>
+  <v-flex :span="2">2份</v-flex>
+</v-flex>
   </v-flex>
 </template>
 
