@@ -1,0 +1,12 @@
+{
+  "name": "flex-auto",
+  "version": "1.0.8",
+  "description": "flex布局",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["flex-auto","flex","auto","row","col"],
+  "author": "yaodao",
+  "license": "ISC"
+}
