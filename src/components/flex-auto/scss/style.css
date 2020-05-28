@@ -8,15 +8,15 @@
 }
 
 .v-flex.v-flex__flex {
-  display: -webkit-flex;
-  /* Safari */
   display: flex;
+  /* Safari */
+  display: -webkit-flex;
 }
 
 .v-flex.v-flex__inline-flex {
-  display: -webkit-inline-flex;
-  /* Safari */
   display: inline-flex;
+  /* Safari */
+  display: -webkit-inline-flex;
 }
 
 .v-flex.v-flex__block {
@@ -32,7 +32,7 @@
 }
 
 .v-grid {
-  display: -webkit-flex;
-  /* Safari */
   display: flex;
+  /* Safari */
+  display: -webkit-flex;
 }

@@ -1,11 +1,13 @@
 @mixin flex {
-  display: -webkit-flex; /* Safari */
   display: flex;
+  /* Safari */
+  display: -webkit-flex;
 }
 
 @mixin inline-flex {
-  display: -webkit-inline-flex; /* Safari */
   display: inline-flex;
+  /* Safari */
+  display: -webkit-inline-flex;
 }
 
 @mixin block {

@@ -36,8 +36,14 @@
       </v-col>
 </v-flex>
 <v-flex>
-  <v-flex>1份</v-flex>
-  <v-flex :span="2">2份</v-flex>
+  <v-flex type="inline-flex">
+    <div>1</div>
+  </v-flex>
+  <v-flex :span="2">
+    <v-grid>
+      123<span style="font-size:48px">123</span>
+    </v-grid>
+  </v-flex>
 </v-flex>
   </v-flex>
 </template>

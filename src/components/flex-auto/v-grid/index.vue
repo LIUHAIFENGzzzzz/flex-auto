@@ -1,15 +1,18 @@
 <template>
-  <div :data-name="$options.name" :class="['v-grid']">
-    <slot>&nbsp;</slot>
+  <div :data-name="$options.name" :class="['v-grid', 'v-grid__' + type]">
+    <div>
+      <slot>&nbsp;</slot>
+    </div>
   </div>
 </template>
 
 <script>
-// import mixin from "../mixins";
+import mixin from "../mixins";
 
 export default {
   name: "v-grid",
-  // mixins: [mixin],
+  mixins: [mixin],
+  props: {},
   data() {
     return {};
   },
