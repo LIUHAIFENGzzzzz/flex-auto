@@ -1,6 +1,6 @@
 {
   "name": "flex-auto",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "flex布局",
   "main": "index.js",
   "scripts": {
