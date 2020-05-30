@@ -1,6 +1,14 @@
 # flex-auto
 
-轻量级，flex 布局，全方位自适应宽高
+轻量级，flex布局，全方位自适应宽高
+
+
+
+### demo演示
+
+https://liuhaifengzzzzz.github.io/flex-auto/dist/#/
+
+
 
 ### npm
 
@@ -15,7 +23,7 @@ cnpm i flex-auto --save
 ```js
 import Vue from "vue";
 
-import flexAuto from "flex-auto";
+import flexAuto from 'flex-auto';
 Vue.use(flexAuto);
 ```
 
@@ -45,6 +53,11 @@ Vue.use(flexAuto);
   <v-flex>1</v-flex>
   <v-flex>2</v-flex>
 </v-col>
+
+<!-- 居中布局 -->
+<v-center>
+  justify-content:center && align-items:center
+</v-center>
 
 <!-- 4 * 4 -->
 <v-row>
@@ -134,7 +147,10 @@ props: {
 }
 ```
 
+
+
 See [Configuration Reference](https://cn.vuejs.org/v2/api/).
+
 
 ## Project setup
 

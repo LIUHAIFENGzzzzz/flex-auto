@@ -2,6 +2,14 @@
 
 轻量级，flex布局，全方位自适应宽高
 
+
+
+### demo演示
+
+https://liuhaifengzzzzz.github.io/flex-auto/dist/#/
+
+
+
 ### npm
 
 ```npm
