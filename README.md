@@ -6,7 +6,7 @@
 
 ### demo演示
 
-https://liuhaifengzzzzz.github.io/flex-auto/dist/#/
+https://liuhaifengzzzzz.github.io/flex-auto/docs/#/
 
 
 
@@ -150,6 +150,7 @@ props: {
 
 
 See [Configuration Reference](https://cn.vuejs.org/v2/api/).
+
 
 
 ## Project setup
