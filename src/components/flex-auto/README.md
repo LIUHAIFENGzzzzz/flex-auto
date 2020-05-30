@@ -6,7 +6,7 @@
 
 ### demo演示
 
-https://liuhaifengzzzzz.github.io/flex-auto/docs/#/
+https://liuhaifengzzzzz.github.io/flex-auto
 
 
 
