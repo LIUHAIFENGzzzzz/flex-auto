@@ -2,6 +2,7 @@ const webpack = require("webpack");
 const ExtractCssChunks = require("extract-css-chunks-webpack-plugin");
 
 module.exports = {
+  publicPath: process.env.NODE_ENV === "production" ? "./" : "/",
   configureWebpack: {
     output: {
       filename: `js/[name].[hash].js`,
