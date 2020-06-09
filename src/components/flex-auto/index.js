@@ -6,7 +6,7 @@ import vCenter from "./v-center";
 
 import vGrid from "./v-grid";
 
-import "./scss/style.scss";
+import "./scss/style.css";
 
 export default {
   install: (Vue) => {
